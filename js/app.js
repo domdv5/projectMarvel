@@ -3,7 +3,8 @@ var counterValue = 0;
 var container = document.getElementById('CarouselInner');
 
 for (let i = 0; i < 150; i++) {
-    const url = `https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=dbe1cb7905a3e13bae9f62eecdbb6c36&hash=4d99849d548d9ba71a3bb5b3d259d303&limit=10&offset=${value}`
+    const url = `https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=751c2d77196e923dff3ad0827b4d6525&hash=7dd27e01838f539c618b3145f10796df&limit=10&offset=${value}`
+
     fetch(url)
         .then(res => res.json())
         .then((json) => {
